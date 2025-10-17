@@ -1,4 +1,4 @@
-package com.example.thuchanh3 // <- đổi thành package của bạn
+package com.example.thuchanh3
 
 import android.os.Bundle
 import android.text.InputType
