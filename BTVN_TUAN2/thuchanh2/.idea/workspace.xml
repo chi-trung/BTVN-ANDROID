@@ -21,70 +21,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf2282e7-e540-4116-9e84-6baf7500914c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/androidTest/java/com/example/thuchanh02/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/java/com/example/thuchanh02/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/drawable/edittext_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/drawable/rounded_red_button.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/app/src/test/java/com/example/thuchanh02/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuchanh02/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh3/app/src/main/java/com/example/thuchanh3/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../thuchanh3/app/src/main/java/com/example/thuchanh3/MainActivity.kt" afterDir="false" />
-    </list>
+    <list default="true" id="cf2282e7-e540-4116-9e84-6baf7500914c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
