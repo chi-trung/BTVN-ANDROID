@@ -43,6 +43,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.OAuthProvider
 import com.google.firebase.messaging.FirebaseMessaging
 
 class MainActivity : ComponentActivity() {
@@ -111,6 +112,8 @@ fun AppNavigation(auth: FirebaseAuth, navigateToProfile: Boolean) {
 @Composable
 fun LoginScreen(navController: NavController, auth: FirebaseAuth) {
     val context = LocalContext.current
+
+    // --- GOOGLE ---
     val gso = remember {
         GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(context.getString(R.string.default_web_client_id))
@@ -139,6 +142,21 @@ fun LoginScreen(navController: NavController, auth: FirebaseAuth) {
         } catch (e: ApiException) {
             Toast.makeText(context, "Đăng nhập thất bại: ${e.message}", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    // --- GITHUB LOGIN ---
+    fun signInWithGitHub() {
+        val provider = OAuthProvider.newBuilder("github.com")
+        provider.addCustomParameter("login", "")
+        auth.startActivityForSignInWithProvider(context as ComponentActivity, provider.build())
+            .addOnSuccessListener {
+                navController.navigate("dashboard_screen") {
+                    popUpTo("login_screen") { inclusive = true }
+                }
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(context, "GitHub login thất bại: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 
     Box(
@@ -174,6 +192,7 @@ fun LoginScreen(navController: NavController, auth: FirebaseAuth) {
                 modifier = Modifier.padding(top = 8.dp, bottom = 40.dp)
             )
 
+            // --- Google Button ---
             Button(
                 onClick = { launcher.launch(googleSignInClient.signInIntent) },
                 modifier = Modifier
@@ -200,6 +219,25 @@ fun LoginScreen(navController: NavController, auth: FirebaseAuth) {
                         fontSize = 16.sp
                     )
                 }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // --- GitHub Button ---
+            Button(
+                onClick = { signInWithGitHub() },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF24292E)),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(
+                    text = "Sign in with GitHub",
+                    color = Color.White,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 16.sp
+                )
             }
 
             Spacer(modifier = Modifier.height(24.dp))
@@ -247,11 +285,12 @@ fun DashboardScreen(navController: NavController) {
                     .clip(RoundedCornerShape(16.dp))
             )
             Spacer(modifier = Modifier.height(16.dp))
+            // 🔧 Fix màu chữ để dễ nhìn hơn
             Text(
                 text = "Chào mừng đến Dashboard!",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF0D47A1)
+                color = Color(0xFF1B5E20)
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = "Quản lý công việc hiệu quả", fontSize = 14.sp, color = Color.Gray)
@@ -290,10 +329,13 @@ fun ProfileScreen(navController: NavController, auth: FirebaseAuth) {
     var birthday by remember { mutableStateOf("") }
     var tempBirthday by remember { mutableStateOf("") }
 
-    // khôi phục ngày sinh khi mở lại
+    // ✅ Sửa lỗi không lưu được ngày sinh
     LaunchedEffect(Unit) {
-        birthday = prefs.getString("birthday", "") ?: ""
-        tempBirthday = birthday
+        val saved = prefs.getString("birthday", "")
+        if (!saved.isNullOrEmpty()) {
+            birthday = saved
+            tempBirthday = saved
+        }
     }
 
     val googleSignInClient = remember {
